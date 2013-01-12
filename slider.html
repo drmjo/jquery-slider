@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/urbancoyote-slider.css">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="js/jquery.uc-slider.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+	
+	$("#myslider").ucSlider({
+			width:800, // px
+			height:300, // px
+			startSlide: 3, //starts from 1
+			arrowOffset:5, //px from the wall of the slider on either side left or right... will not accept negative values
+			arrowHeight:100, // px
+			arrowWidth:50, // px
+			autoplayTimer: 2000, //ms
+			sliderSpeed: 1000 //ms
+			
+	});
+		
+		
+	$("#yourslider").ucSlider({
+		  width:300,
+		  height:150,
+		  startSlide:2,
+		  autoplayTimer: 2000,
+		  slideSpeed:1000,
+	});
+
+});
+
+</script>
+<style type="text/css">
+	#slider-wrapper{width:800px; margin:30px auto;}
+</style>
+</head>
+<body>
+
+<div id="slider-wrapper">
+
+<!--UC-Slider-->
+<div id="myslider">
+	<ul>
+    	<li> slide 1 </li>
+    	<li> slide 2 </li>
+       	<li> slide 3 </li>
+        <li> slide 4 </li>
+    </ul>
+</div>
+
+
+<br>
+<br>
+<div id="yourslider">
+	<ul>
+    	<li> slide 1 </li>
+    	<li> slide 2 </li>
+    </ul>
+</div>
+
+
+<!--end UC-slider-->
+</div>
+    </body>
+</html>
