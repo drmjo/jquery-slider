@@ -1,0 +1,19 @@
+/* CSS Document */
+
+
+/*A reset CSS must be included before this stylesheet*/
+
+.urbancoyote-slider-main{overflow:hidden; position:relative;}
+.urbancoyote-slider-cassette{position:absolute;}
+.urbancoyote-slider-slide{float:left; background:#CCC;}
+
+.urbancoyote-slider-posWrapper{height:24px; z-index:2000; position:absolute; bottom:0px;}
+.urbancoyote-slider-posMarker{height:24px; width:24px; background:url("../img/urbancoyote-slider-pos-marker-24x72-blackline.png") no-repeat; float:left;}
+
+.urbancoyote-slider-leftArrow, .urbancoyote-slider-rightArrow{position:absolute; cursor:pointer; z-index:2000; background-image:url("../img/urbancoyote-slider-arrows.png"); background-repeat:no-repeat;}
+
+
+.urbancoyote-slider-leftArrow {background-position:top left;}
+.urbancoyote-slider-rightArrow {background-position:top right;}
+.urbancoyote-slider-leftArrow:hover {background-position:bottom left;}
+.urbancoyote-slider-rightArrow:hover {background-position:bottom right;}
